@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Frontend Mentor | Contact form</title>
+</head>
+
+<body>
+  <div class="container">
+    <form action="#" class="form">
+      <h2 class="contact">Contact Us</h2>
+      <div class="flex-container">
+        <div class="form-field">
+          <label for="first-name" required>First Name</label>
+          <input class="input-text" type="text" name="first-name" id="first-name">
+          <span class="error-required">The field is required</span>
+        </div>
+        <div class="form-field">
+          <label for="last-name" required>Last Name</label>
+          <input class="input-text" type="text" name="last-name" id="last-name">
+          <span class="error-required">The field is required</span>
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="email" required>Email</label>
+        <input class="input-text" type="email" name="email" id="email" >
+        <span class="error-required">The field is required</span>
+        <span class="invalid-email">Please enter a valid email address</span>
+      </div>
+
+      <label required>Query type</label>
+      <div class="flex-container">
+        <label class="rb-box" for="general-enquiry">
+          <input class="rb" type="radio" name="query-type" id="general-enquiry">
+          General Enquiry
+        </label>
+        <label class="rb-box" for="support-request">
+          <input class="rb" type="radio" name="query-type" id="support-request">
+          Suport Request
+        </label>
+        <span class="error-required">The field is required</span>
+      </div>
+
+      <div class="form-field">
+        <label for="message" required>Message</label>
+        <textarea name="message" id="text-area" rows="6"></textarea>
+        <span class="error-required">The field is required</span>
+      </div>
+
+      <div class="form-field">
+        <div class="tos-agree">
+          <input type="checkbox" name="tos-agree" id="tos-agree">
+          <label for="tos-agree" style="font-size: small;" required>I consent to being contacted by team</label>
+          <span class="error-required">The field is required</span>
+        </div>
+      </div>
+
+      <div class="form-field">
+        <input id="submit" type="submit" value="Submit">
+      </div>
+    </form>
+    <div id="toast-success" class="toast-success">
+      <div class="close-button">x</div>
+      <div>
+        <i>
+          <img src="assets/images/icon-success-check.svg" alt="icon-success">
+        </i>
+        <span>Message Sent</span>
+      </div>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
